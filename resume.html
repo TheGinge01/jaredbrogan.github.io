@@ -1,5 +1,14 @@
+<!DOCTYPE html>
 <head>
   <link rel="shortcut icon" type="image/x-icon" href="contents/favicon.ico">
+  <script language="javascript"> 
+    if(!window.location.search.substring(1) == "full=true") {  
+      if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) { // detect iOS browser
+        window.location.replace("https://jaredbrogan.github.io/contents/Jared Brogan Resume 2021.pdf");
+      }
+    }
+  </script>
 </head>
+
 <link type="text/css" rel="stylesheet" href="/css/resume.css" />
 <iframe src="/contents/Jared Brogan Resume 2021.pdf" width="100%" height="100%" frameBorder="0"></iframe>
