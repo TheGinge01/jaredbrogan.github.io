@@ -25,14 +25,14 @@
 
   let mobileDetected = detectMobile()
   if(mobileDetected) {
-    var URL = "/contents/Jared Brogan - Resume.pdf";
+    var URL = "https://jaredbrogan.github.io/contents/Jared%20Brogan%20-%20Resume.pdf";
     var iframe = `<iframe id = "myIframe" src = "${URL}" style="width:100%; height:100%;" frameborder="0" allowfullscreen=""></iframe>`;
     $(`#iframeContainer`).html(iframe)
     console.log('Detected mobile browser')
   } else {
     var iframe = `<link type="text/css" rel="stylesheet" href="/css/resume.css" /><iframe src="/contents/Jared Brogan - Resume.pdf" width="100%" height="100%" frameBorder="0"></iframe>`;
     $(`#iframeContainer`).html(iframe)
-    console.log('Detected desktop browser')
+    console.log('Detected desktop browserTEST')
   }
 </script>
 </body>
